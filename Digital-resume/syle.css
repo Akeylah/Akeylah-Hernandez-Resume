@@ -1,0 +1,76 @@
+:root {
+  --desert-rock: #A48D78;
+  --soft-sandstone: #CBB9A4;
+  --creamed-oat: #E6DAC8;
+  --porcelain-mist: #F4F1EA;
+  --feather-white: #FAF9F6;
+
+  --text-color: #333;
+  --bg-color: var(--feather-white);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  text-align: center;
+  background-color: var(--creamed-oat);
+  padding: 2rem;
+}
+
+.job-title {
+  font-style: italic;
+  color: var(--desert-rock);
+}
+
+.socials a {
+  margin: 0 0.5rem;
+  color: var(--desert-rock);
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+  border-bottom: 1px solid var(--soft-sandstone);
+}
+
+h2 {
+  color: var(--desert-rock);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  border: 1px solid var(--soft-sandstone);
+  border-radius: 5px;
+}
+
+button {
+  background-color: var(--desert-rock);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--creamed-oat);
+}
+
+.dark-mode {
+  --bg-color: #2e2e2e;
+  --text-color: #f5f5f5;
+}
