@@ -3,76 +3,393 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Keylah's Digital Resume</title>
+  <meta name="description" content="Keylah Hernandez - Aspiring Data Analyst with skills in SQL, Python, and Data Visualization">
+  <title>Keylah Hernandez | Data Analyst</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
 <body>
   <header>
-    <h1>Keylah Hernandez</h1>
-    <p class="job-title">Aspiring Data Analyst</p>
-    <div class="socials">
-      <a href="#">LinkedIn</a>
-      <a href="#">GitHub</a>
-      <a href="#">Email</a>
+    <div class="header-content">
+      <div class="profile-pic-container">
+        <div class="profile-pic-placeholder">
+          <i class="fas fa-user-circle"></i>
+        </div>
+      </div>
+      <div class="header-text">
+        <h1>Akeylah Hernandez</h1>
+        <p class="job-title">Computer Science Student</p>
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="header-buttons">
+          <button id="downloadBtn" class="btn-primary">
+            <i class="fas fa-download"></i> Download Resume (PDF)
+          </button>
+          <button id="toggleMode" class="btn-secondary">
+            <i class="fas fa-moon"></i> Dark Mode
+          </button>
+        </div>
+      </div>
     </div>
-    <button id="downloadBtn">Download Resume (PDF)</button>
-    <button id="toggleMode">Toggle Light/Dark</button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+        <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+        <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+        <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>A passionate and curious learner driven by data, creativity, and the pursuit of meaningful impact...</p>
-  </section>
+  <main>
+    <section id="about" class="section-with-icon">
+      <div class="section-header">
+        <i class="fas fa-user section-icon"></i>
+        <h2>About Me</h2>
+      </div>
+      <div class="section-content">
+        <p>A passionate and curious learner driven by data, creativity, and the pursuit of meaningful impact. I specialize in transforming raw data into actionable insights through analytical thinking and technical skills. Currently enhancing my expertise through the Google Data Analytics Certification.</p>
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <i class="fas fa-database"></i>
+            <h3>Data Focused</h3>
+            <p>Skilled in SQL, Python, and data visualization</p>
+          </div>
+          <div class="highlight-card">
+            <i class="fas fa-lightbulb"></i>
+            <h3>Creative Problem Solver</h3>
+            <p>Approach challenges with innovative solutions</p>
+          </div>
+          <div class="highlight-card">
+            <i class="fas fa-rocket"></i>
+            <h3>Fast Learner</h3>
+            <p>Quick to adapt and master new technologies</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Data Analysis</li>
-      <li>SQL</li>
-      <li>Go, Python, JavaScript</li>
-      <li>HTML/CSS</li>
-      <li>Git & GitHub</li>
-    </ul>
-  </section>
+    <section id="skills" class="section-with-icon">
+      <div class="section-header">
+        <i class="fas fa-code section-icon"></i>
+        <h2>Skills</h2>
+      </div>
+      <div class="section-content">
+        <div class="skills-container">
+          <div class="skill-category">
+            <h3>Technical Skills</h3>
+            <ul class="skill-list">
+              <li>
+                <span class="skill-name">Data Analysis</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+              </li>
+              <li>
+                <span class="skill-name">SQL</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+              </li>
+              <li>
+                <span class="skill-name">Python</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div>
+              </li>
+              <li>
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 70%"></div></div>
+              </li>
+              <li>
+                <span class="skill-name">Go</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 65%"></div></div>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h3>Tools & Technologies</h3>
+            <div class="tools-grid">
+              <div class="tool-item">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+              <div class="tool-item">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </div>
+              <div class="tool-item">
+                <i class="fas fa-database"></i>
+                <span>SQL Databases</span>
+              </div>
+              <div class="tool-item">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="tool-item">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="tool-item">
+                <i class="fas fa-chart-bar"></i>
+                <span>Data Visualization</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <p>Associate Degree, University of Belize</p>
-    <p>IT Courses (UoPeople)</p>
-  </section>
+    <section id="education" class="section-with-icon">
+      <div class="section-header">
+        <i class="fas fa-graduation-cap section-icon"></i>
+        <h2>Education</h2>
+      </div>
+      <div class="section-content">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2022 - Present</div>
+            <div class="timeline-content">
+              <h3>Associate Degree in Information Technology</h3>
+              <p class="institution">University of Belize</p>
+              <ul>
+                <li>Data cleaning, analysis, and visualization</li>
+                <li>SQL, R programming, Tableau</li>
+                <li>Expected completion: 2026</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2018- 2022</div>
+            <div class="timeline-content">
+              <h3>High School Diploma</h3>
+              <p class="institution">Belmopan Comprehensive Highschool</p>
+              <ul>
+                <li>GPA: 4.0</li>
+                <li>IT related Coursework include rasberry pie, graphic design, and data analysis</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2012 - 2018</div>
+            <div class="timeline-content">
+              <h3>Primary School</h3>
+              <p class="institution">Garden City of Primary School</p>
+              <ul>
+                <li>Introduction to programming concepts</li>
+                <li>Graphic Designs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section id="experience">
-    <h2>Work Experience</h2>
-    <p>Coming soon...</p>
-  </section>
+    <section id="experience" class="section-with-icon">
+      <div class="section-header">
+        <i class="fas fa-briefcase section-icon"></i>
+        <h2>Experience</h2>
+      </div>
+      <div class="section-content">
+        <div class="experience-placeholder">
+          <i class="fas fa-hourglass-half"></i>
+          <p>Professional experience section coming soon as I progress in my career journey!</p>
+          <p>In the meantime, check out my <a href="#projects">projects</a> below.</p>
+        </div>
+      </div>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>TCP/UDP Chat App in Go</li>
-      <li>Hashing Algorithm Visualizer</li>
-      <li>Digital Resume (this site!)</li>
-    </ul>
-  </section>
+    <section id="projects" class="section-with-icon">
+      <div class="section-header">
+        <i class="fas fa-project-diagram section-icon"></i>
+        <h2>Projects</h2>
+      </div>
+      <div class="section-content">
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <h3>TCP/UDP Chat Application</h3>
+              <div class="project-links">
+                <a href="#" aria-label="View code"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <p class="project-tech">Go • Networking • Concurrency</p>
+            <p class="project-desc">A terminal-based chat application supporting both TCP and UDP protocols, featuring multi-client support and basic encryption.</p>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Hashing Algorithm Visualizer</h3>
+              <div class="project-links">
+                <a href="#" aria-label="View code"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <p class="project-tech">JavaScript • HTML/CSS • Cryptography</p>
+            <p class="project-desc">Interactive web tool that visually demonstrates how different hashing algorithms process input data step-by-step.</p>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Data Analysis Portfolio</h3>
+              <div class="project-links">
+                <a href="#" aria-label="View code"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <p class="project-tech">Python • Pandas • Matplotlib</p>
+            <p class="project-desc">Collection of Jupyter notebooks showcasing data cleaning, analysis, and visualization techniques on various datasets.</p>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-header">
+              <h3>This Digital Resume</h3>
+              <div class="project-links">
+                <a href="#" aria-label="View code"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <p class="project-tech">HTML • CSS • JavaScript</p>
+            <p class="project-desc">Responsive, interactive resume website featuring dark mode toggle and clean design (the site you're viewing now!).</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <p>Google Data Analytics (in progress)</p>
-  </section>
+   <section id="certifications" class="section-with-icon">
+  <div class="section-header">
+    <i class="fas fa-certificate section-icon"></i>
+    <h2>Certifications & Badges</h2>
+  </div>
+  <div class="section-content">
+    <div class="certifications-grid">
+      
+      <!-- Computer Hardware Basics Tile -->
+      <div class="certification-tile">
+        <div class="tile-header">
+          <img src="./images.png/Cisco-Emblem logo.png" alt="Cisco Logo" class="cisco-logo">
+          <div class="tile-title">
+            <h3>Computer Hardware Basics</h3>
+            <p class="certification-meta">
+              <span class="org">Cisco Networking Academy</span>
+              <span class="date">May 2025</span>
+            </p>
+          </div>
+        </div>
+        
+        <div class="tile-body">
+          <p class="certification-desc">
+            Fundamental knowledge of computers and mobile devices, including installation, 
+            repair, upgrading, and basic troubleshooting techniques.
+          </p>
+          
+          <div class="badges-section">
+            <h4>Credentials:</h4>
+            <div class="badges-grid">
+              <div class="credential-box">
+                <a href="https://drive.google.com/uc?export=download&id=1rAuPdaR6DLYV7u3Kw8J1u-aFXKDysoQL" 
+                   download="Keylah_CHB_Certificate.pdf">
+                  <div class="credential-icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </div>
+                  <div class="credential-info">
+                    <span class="credential-name">Official Certificate</span>
+                    <span class="credential-format">PDF Download</span>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="credential-box">
+                <a href="https://www.credly.com/badges/6bce5f9f-afc3-40de-8eb8-045751c3838d" 
+                   target="_blank">
+                  <div class="credential-icon">
+                    <img src="./images.png/image.png" alt="CCNA Badge">
+                  </div>
+                  <div class="credential-info">
+                    <span class="credential-name">Digital Badge</span>
+                    <span class="credential-format">View on Credly</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tile-footer">
+          <a href="https://www.netacad.com/courses/computer-hardware-basics" 
+             target="_blank" 
+             class="course-link">
+            <i class="fas fa-external-link-alt"></i> Course Details
+          </a>
+        </div>
+      </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+      <!-- Add more tiles for additional certifications here -->
+      
+    </div>
+  </div>
+</section>
+
+    <section id="contact" class="section-with-icon">
+      <div class="section-header">
+        <i class="fas fa-envelope section-icon"></i>
+        <h2>Get In Touch</h2>
+      </div>
+      <div class="section-content">
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>My Contact Information</h3>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:akeylahh365@gmail.com">akeylahh365@gmail.com</a></p>
+            <p><i class="fas fa-phone"></i> +501 608-3577</p>
+            <p><i class="fas fa-map-marker-alt"></i> Belmopan, Belize</p>
+            
+            <div class="contact-socials">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/xanjgqaq" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject of Email</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Keylah Hernandez</p>
+    <div class="footer-content">
+      <p>© 2025 Akeylah Hernandez. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="back-to-top">
+      <a href="#top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+    </div>
   </footer>
 </body>
 </html>
